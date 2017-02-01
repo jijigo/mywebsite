@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-  // $(".nav li a").click(function(){
-  //   alert('hi');
-  // });
-
   $('.nav li a').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -15,5 +11,11 @@ $(document).ready(function() {
         return false;
       }
     }
+  });
+
+  $(window).scroll(function(){
+    $('.nav').addClass("nav_up");
+
+    // console.log();
   });
 });
