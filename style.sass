@@ -1,7 +1,10 @@
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css)
+
+
 *
   // border: 1px solid
   position: relative
-  font-family: La Belle Aurore, 微軟正黑體
+  font-family: La Belle Aurore, 'cwTeXMing', sans-serif
   margin: 0
   padding: 0
 
@@ -80,6 +83,7 @@ html, body
       margin: 0 auto
       z-index: 2
       display: block
+      // transition: all 1s
 
       &:before, &:after
         position: absolute
@@ -178,21 +182,48 @@ html, body
     padding: 5% 0
 
     .self
-      margin: 20px auto
+      margin: 20px auto 40px auto
       padding: 15px 30px
       text-align: left
       max-width: 600px
+      font-size: 20px
+      letter-spacing: 1px
       // border: 3px solid #fff
+
+    h3
+      padding: 5px 0
+      // position: absolute
+      line-height: 20px
+      width: 100%
+      // color: #888
+      font-size: 20px
+      letter-spacing: 1px
 
     .skill_box
       max-width: 600px
       height: auto
-      margin: 20px auto
+      margin: 10px auto 30px auto
       background: #FAE1DF
       border-radius: 10px
+      padding-top: 10px
+      box-shadow: 0 5px #F9B0AE
 
-      h3
-        padding: 5px 0
+      img
+        width: 80px
+        height: 80px
+        margin: 10px auto
+        width: 70px
+        height: auto
+        max-height: 70px
+        display: inline
+
+    // h3
+    //   padding: 5px 0
+    //   // position: absolute
+    //   line-height: 20px
+    //   width: 100%
+    //   // color: #888
+    //   letter-spacing: 1px
 
       .img_box
         width: 80px
@@ -205,12 +236,7 @@ html, body
         // background: #F9F3EA
 
 
-      img
-        margin: 10px auto
-        width: 70px
-        height: auto
-        max-height: 70px
-        display: inline
+
 
 /* demo */
 
@@ -223,11 +249,13 @@ html, body
   h3
     padding: 10px 0
     text-align: center
+    font-size: 30px
+
 
 .demo_wrap
   margin: 0 auto
   text-align: center
-  padding: 10% 0
+  padding: 5% 0 10% 0
 
 .demo_box
   width: 200px
