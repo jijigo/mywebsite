@@ -16,6 +16,7 @@ $(document).ready(function() {
   var navbarHeight = $(".navbar").height();
   var lastScrollTop = 0;
   var headerHeight = $(".section.home").height();
+  var st = $(this).scrollTop(); //滑動的距離相對於最頂端
 
   $(window).scroll(function(){
     hasScrolled();
@@ -30,10 +31,10 @@ $(document).ready(function() {
 
     if(st > (headerHeight - navbarHeight)){
       // nav 出現
-      $("nav").removeClass("navbar-up");
+      $("nav").removeClass("navbar_home");
     } else {
       // nav 隱藏
-      $("nav").addClass("navbar-up");
+      $("nav").addClass("navbar_home");
     }
     lastScrollTop = st;
   }
@@ -61,7 +62,7 @@ $(".self_time").html(diff_year + "年" + diff_month + "個月。");
 
 
 $(".hamburger_menu").click(function() {
-  $(".navbar ul").slideToggle("show");
+  $(".navbar ul").slideToggle("show", 5000);
   $(".hamburger").toggleClass("hamburger_exit");
   console.log("hi");
 });
